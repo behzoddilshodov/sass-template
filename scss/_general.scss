@@ -44,12 +44,13 @@ img {
   text-align: center;
   color: #FFFFFF;
   border: 3px solid $color-primary;
+  display: inline-block;
 }
 
 .button:hover{
   color: $color-primary;
   background-color: #FFFFFF;
   background: transparent;
-  color: $yellow;
-  box-shadow: 0 0 0 3px $yellow;
+  color: $color-primary;
+  box-shadow: 0 0 0 3px $color-primary inset;
 }

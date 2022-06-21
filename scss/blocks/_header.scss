@@ -3,6 +3,7 @@
   padding-bottom: 21px;
   position: fixed;
   width: 100%;
+  background-color: #FFFFFF;
 
   &__container {
     display: flex;
@@ -10,18 +11,9 @@
     justify-content: space-between;
   }
 
-  &__container--active {
-  }
-
   &__content {
     display: flex;
     align-items: center;
-  }
-
-  &__logo-wrap {
-  }
-
-  &__logo {
   }
 
   &__nav {
@@ -34,9 +26,6 @@
     gap: 32px;
   }
 
-  &__item {
-  }
-
   &__link {
     font-family: 'Space Mono';
     font-style: normal;
@@ -47,25 +36,9 @@
     text-decoration: none;
   }
 
-  &__link--yellow {
-  }
-
-  &__main-link {
-  }
-
   &__button {
     display: none;
   }
-
-  &__line {
-  }
-
-  &__cross {
-  }
-}
-.container {
-}
-.button {
 }
 
 @include breakpoint-down(700px){
@@ -78,21 +51,11 @@
       flex-direction: column;
       justify-content: flex-start;
       position: relative;
-     
-    }
-  
-    &__container--active {
     }
   
     &__content {
       display: flex;
       align-items: center;
-    }
-  
-    &__logo-wrap {
-    }
-  
-    &__logo {
     }
   
     &__nav {
@@ -105,23 +68,14 @@
       display: flex;
       gap: 32px;
     }
-  
-    &__item {
-    }
-  
+
     &__link {
       font-family: 'Space Mono';
       font-style: normal;
       font-weight: 700;
       font-size: 18px;
       line-height: 25px;
-      /* identical to box height, or 139% */
-      
-      
       color: #E5ECF4;
-    }
-  
-    &__link--yellow {
     }
   
     &__main-link {
@@ -138,7 +92,6 @@
 	    font: inherit;
 	    cursor: pointer;
 	    outline: inherit;
-
     }
   
     &__line {
@@ -150,10 +103,6 @@
     &__cross {
       display: none;
     }
-  }
-  .container {
-  }
-  .button {
   }
 
   .site-header__container--active{
