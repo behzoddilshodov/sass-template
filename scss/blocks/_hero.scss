@@ -1,19 +1,19 @@
 .hero {
   margin-top: 96px;
-
+  
   &__inner-container {
     background-image: url("../img/hero-bckg.jpg");
-
+    
     padding-top: 153px;
     padding-bottom: 152px;
     background-repeat: no-repeat;
     background-position: center;
   }
-
+  
   &__wrapper {
     max-width: 500px;
   }
-
+  
   &__heading {
     font-family: 'Space Mono';
     font-style: normal;
@@ -25,7 +25,7 @@
     margin: 0;
     margin-bottom: 40px;
   }
-
+  
   &__txt {
     position: relative;
     font-style: normal;
@@ -38,7 +38,7 @@
     margin-bottom: 40px;
     padding-left: 57px;
   }
-
+  
   .hero__txt::before { 
     content: url(../img/left-chiziq.svg);
     display: inline-block;
@@ -49,7 +49,7 @@
     top: calc(50% - 8px);
     right: calc(100% + 57px);
   }
-
+  
   .hero__txt::after {
     content: url(../img/chiziqde.svg);
     display: inline-block;
@@ -61,7 +61,7 @@
     top: calc(50% - 8px);
     left: calc(100% + 40px);
   }
-
+  
   &__btn {
     display: inline-block;
     margin-left: 57px;
@@ -71,11 +71,11 @@
 @include breakpoint-down(1000px) {
   .hero {
     margin-top: 96px;
-
+    
     &__inner-container {
       padding-top: 137px;
     }
-
+    
     &__wrapper {
       max-width: 100%;
       display: flex;
@@ -83,18 +83,18 @@
       align-items: center;
       text-align: center;
     }
-
+    
     &__heading {
       max-width: 573px;
       margin: 0;
       margin-bottom: 24px;
     }
-
+    
     &__txt {
       margin: 0;
       margin-bottom: 32px;
     }
-
+    
     .hero__txt::before {
       content: url(/img/chiziqde.svg);
       display: inline-block;
@@ -107,11 +107,11 @@
       top: 170px;
       right: calc(100% + 57px);
     }
-
+    
     .hero__txt::after {
       display: none;
     }
-
+    
     &__btn {
       display: inline-block;
       margin-left: 57px;
@@ -123,16 +123,16 @@
   .hero__inner-container {
     background-image: url(/img/hero-tablet.jpg);
   }
-
+  
   .hero__heading {
     font-size: 56px;
     line-height: 56px;
   }
-
+  
   .hero__txt {
     padding: 0;
   }
-
+  
   .hero__btn {
     margin: 0;
   }
@@ -143,12 +143,12 @@
     background-image: url(/img/hero-mobile.jpg);
     background-size: cover;
   }
-
+  
   .hero__heading {
     font-size: 40px;
     line-height: 40px;
   }
-
+  
   .hero__txt::before {
     left: -300px;
   }

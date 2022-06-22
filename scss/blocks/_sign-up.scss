@@ -2,13 +2,18 @@
   background-color: $color-second;
   padding-top: 102px;
   padding-bottom: 102px;
-
+  // transform: translateX(-200px);
+  background-image: url("../img/semi-circles.svg");
+  background-repeat: no-repeat;
+  background-position:bottom;
+  background-size: 1153px;
+  
   &__container {
     display: flex;
     justify-content: space-between;
     align-items:center;
   }
-
+  
   &__heading {
     font-family: 'Space Mono';
     font-style: normal;
@@ -18,17 +23,21 @@
     letter-spacing: -2.14286px; 
     color: #FFFFFF;
     max-width: 415px;
+    margin: 0;
+    margin-right: 10px;
   }
-
+  
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     
   }
-
+  
   &__link {
-    margin-right: 18px;
+    width: 100%;
+    width: 170px;
+    display: block;
     background-color: $color-light;
     border-radius: 4px;
     display: flex;
@@ -39,11 +48,15 @@
     padding-right: 15px;
     text-decoration: none;
   }
-
+  
+  &__link:not(:last-child){
+    margin-right: 18px;
+  }
+  
   &__span {
     margin-left: 12px;
   }
-
+  
   &__link-txt {
     font-family: 'Space Mono';
     font-style: normal;
@@ -55,7 +68,7 @@
     margin: 0;
     margin-bottom: 4px;
   }
-    
+  
   &__link--desc {
     font-family: 'Space Mono';
     font-style: normal;
@@ -65,8 +78,62 @@
     letter-spacing: -0.892857px;
     color: $color-second;
     margin: 0;
-
+    
   }
 }
-.container {
+
+@include breakpoint-down(830px){
+  .sign-up {
+    padding-top: 62px;
+    padding-bottom: 62px;
+    
+    &__container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    &__heading {
+      text-align: center;
+      font-size: 48px;
+      line-height: 48px;
+      margin-bottom: 40px;
+    }
+    
+    &__link:not(:last-child) {
+      margin-right: 18px;
+    }
+    
+    &__link{
+      margin:0;
+    }
+    
+    &__span {
+      margin-left: 12px;
+    }
+    
+    &__link-txt {
+      font-family: 'Space Mono';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 10px;
+      line-height: 15px;
+      letter-spacing: -0.446429px;
+      color: $color-second;
+      margin: 0;
+      margin-bottom: 4px;
+    }
+    
+    &__link--desc {
+      font-family: 'Space Mono';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: -0.892857px;
+      color: $color-second;
+      margin: 0;
+      
+    }
+  }
+  
 }

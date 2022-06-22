@@ -5,28 +5,28 @@
   width: 100%;
   background-color: #FFFFFF;
   z-index: 100;
-
+  
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-
+  
   &__content {
     display: flex;
     align-items: center;
   }
-
+  
   &__nav {
     margin-left: 58px;
   }
-
+  
   &__list {
     @include list-unstyled;
     display: flex;
     gap: 32px;
   }
-
+  
   &__link {
     font-family: 'Space Mono';
     font-style: normal;
@@ -36,7 +36,11 @@
     color: $color-grey;
     text-decoration: none;
   }
-
+  
+  &__link:hover{
+    color: $color-primary;
+  }
+  
   &__button {
     display: none;
   }
@@ -46,30 +50,30 @@
   .site-header {
     padding-top: 24px;
     padding-bottom: 47px;
-
+    
     &__container {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       position: relative;
     }
-  
+    
     &__content {
       display: flex;
       align-items: center;
     }
-  
+    
     &__nav {
       margin-left: 58px;
       display: none
     }
-  
+    
     &__list {
       @include list-unstyled;
       display: flex;
       gap: 32px;
     }
-
+    
     &__link {
       font-family: 'Space Mono';
       font-style: normal;
@@ -78,39 +82,39 @@
       line-height: 25px;
       color: #E5ECF4;
     }
-  
+    
     &__main-link {
       display: none;
     }
-  
+    
     &__button {
       display: flex;
       align-items: center;
       background: none;
-	    color: inherit;
-	    border: none;
-	    padding: 0;
-	    font: inherit;
-	    cursor: pointer;
-	    outline: inherit;
+      color: inherit;
+      border: none;
+      padding: 0;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
     }
-  
+    
     &__line {
       display: block;
       position: absolute;
       left: 32px;
     }
-  
+    
     &__cross {
       display: none;
     }
   }
-
+  
   .site-header__container--active{
     .site-header__container{
       position: relative;
     }
-
+    
     .site-header__nav{
       display: block;
       position: absolute;
@@ -126,23 +130,23 @@
       margin-top: 23px;
       box-shadow: 0 5000px 0 5000px rgba(0, 0, 0, 0.75);
     }
-
+    
     .site-header__line{
       display: none;
     }
-
+    
     .site-header__cross{
       display: block;
       display: block;
       position: absolute;
       left: 32px;
     }
-
+    
     .site-header__list{
       flex-direction: column;
       gap: 24px;
     }
-
+    
     .site-header__main-link{
       position: absolute;
       display: block;

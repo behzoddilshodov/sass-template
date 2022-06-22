@@ -17,7 +17,7 @@
   }
 
   &__item-wrapper::before {
-    content: url(/img/phone.svg);
+    content: url("/img/phone.svg");
     display: block;
     background-size: contain;
     margin-bottom: 40px;
@@ -50,7 +50,7 @@
   }
 
   .step__item-img {
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
   }
 
   .step__item::after {
@@ -71,8 +71,6 @@
     margin-top: 160px;
     margin-bottom: 200px;
 
-    &__container {}
-
     &__list {
       @include list-unstyled;
       display: flex;
@@ -83,24 +81,15 @@
     }
 
     &__item {
-      max-width: 350px;
+      max-width: 400px;
+      margin-left: 125px;
     }
-
-    &__item-wrapper::before {
-
-
-      &__item-wrapper::after {}
-    }
-
-    &__heading {}
-
-    &__txt {}
 
     .step__item-img {
       position: absolute;
       margin-bottom: 40px;
       display: inline-block;
-      left: calc(30px);
+      left: calc(78px);
     }
 
     .step__item::after {
@@ -110,12 +99,55 @@
       position: absolute;
       height: 15px;
       z-index: -1;
-      // 270
-      // transform:translate(-500px, -270px);
-      transform: rotate(90deg);
-      left: -350px;
-      transform: translate(none);
+      transform: rotate(90deg) translate(-530px, -5px);
+      left: -280px;
     }
   }
 
+}
+
+@include breakpoint-down(764px) {
+  .step .step__item::after {
+    max-width: 973px;
+    width: 100%;
+    border: 10px solid #E5ECF4;
+    position: absolute;
+    height: 15px;
+    z-index: -1;
+    transform: rotate(90deg) translate(-530px, -5px);
+    left: -260px;
+  }
+}
+
+@include breakpoint-down(590px) {
+  .step .step__item::after {
+      display: none;
+    }
+
+    .step .step__item-img {
+      position: absolute;
+      margin-bottom: 40px;
+      display: inline-block;
+      left: 50%;
+      transform: translateX(-50%)
+    }
+    .step .step__item{
+      margin-left: 0;
+    }
+
+    .step .step__heading{
+      margin-top: 207px;
+      text-align: center;
+    }
+
+    .step .step__txt{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 48px;
+   } 
+
+    .step__item-img{
+      margin: 0;
+    }
+  
 }
