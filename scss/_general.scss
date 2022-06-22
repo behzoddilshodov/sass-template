@@ -17,13 +17,18 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
+  overflow: visible;
   font-family: 'Lexend Deca', sans-serif;
   background-color: #fff;
 }
 
-h1,h2,h3,h4,h5,h6{
-  font-family:'Space Mono';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Space Mono';
 }
 
 img {
@@ -47,7 +52,7 @@ img {
   display: inline-block;
 }
 
-.button:hover{
+.button:hover {
   color: $color-primary;
   background-color: #FFFFFF;
   background: transparent;

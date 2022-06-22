@@ -1,0 +1,121 @@
+.step {
+  margin-top: 160px;
+  margin-bottom: 200px;
+
+  // &__container {
+  // }
+
+  &__list {
+    @include list-unstyled;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__item {
+    max-width: 350px;
+  }
+
+  &__item-wrapper::before {
+    content: url(/img/phone.svg);
+    display: block;
+    background-size: contain;
+    margin-bottom: 40px;
+
+    &__item-wrapper::after {
+      border: 15px solid #E5ECF4;
+      height: 15px;
+    }
+  }
+
+  &__heading {
+    font-family: 'Space Mono';
+    margin: 0;
+    margin-bottom: 27px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: $color-second;
+  }
+
+  &__txt {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: $color-grey;
+  }
+
+  .step__item-img {
+    margin-bottom: 40px; 
+  }
+
+  .step__item::after {
+    content: '';
+    display: block;
+    max-width: 973px;
+    width: 100%;
+    border: 10px solid #E5ECF4;
+    position: absolute;
+    z-index: -1;
+    transform: translate(-92%, -270px);
+    background-color: #E5ECF4;
+  }
+}
+
+@include breakpoint-down(958px) {
+  .step {
+    margin-top: 160px;
+    margin-bottom: 200px;
+
+    &__container {}
+
+    &__list {
+      @include list-unstyled;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__item {
+      max-width: 350px;
+    }
+
+    &__item-wrapper::before {
+
+
+      &__item-wrapper::after {}
+    }
+
+    &__heading {}
+
+    &__txt {}
+
+    .step__item-img {
+      position: absolute;
+      margin-bottom: 40px;
+      display: inline-block;
+      left: calc(30px);
+    }
+
+    .step__item::after {
+      max-width: 973px;
+      width: 100%;
+      border: 10px solid #E5ECF4;
+      position: absolute;
+      height: 15px;
+      z-index: -1;
+      // 270
+      // transform:translate(-500px, -270px);
+      transform: rotate(90deg);
+      left: -350px;
+      transform: translate(none);
+    }
+  }
+
+}

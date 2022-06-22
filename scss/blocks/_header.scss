@@ -4,6 +4,7 @@
   position: fixed;
   width: 100%;
   background-color: #FFFFFF;
+  z-index: 100;
 
   &__container {
     display: flex;
@@ -123,6 +124,7 @@
       height: calc(100vh - 100%);
       padding-left: 32px;
       margin-top: 23px;
+      box-shadow: 0 5000px 0 5000px rgba(0, 0, 0, 0.75);
     }
 
     .site-header__line{
