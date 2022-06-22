@@ -107,11 +107,13 @@
         @include list-unstyled;
         display: flex;
         gap: 24px;
-        margin-top: 87pxs;
+        margin: 0;
+        margin-top: 87px;
       }
-      
+    
       .footer__img{
-        margin-right: 24px;
+        margin-right: 0px;
+        
       }
     }
     
